@@ -17,6 +17,9 @@ Route::group(['module' => 'Category', 'prefix' => 'student', 'middleware' => ['a
 //Students
     Route::get('list', 'StudentController@list')->name('studentList');
     Route::post('store', 'StudentController@store')->name('student.store');
+    Route::get('edit/{id}', 'StudentController@edit')->name('student.edit');
+    Route::post('update', 'StudentController@update')->name('student.update');
+
 
 //FeesSetup
     Route::get('feesSetup/list', 'FeesController@list')->name('feesList');
@@ -34,3 +37,25 @@ Route::group(['module' => 'Category', 'prefix' => 'student', 'middleware' => ['a
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
